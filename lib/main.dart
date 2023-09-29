@@ -4,6 +4,7 @@ import 'package:flutter_provider/Provider/favourite_provider.dart';
 import 'package:flutter_provider/Screens/count_example.dart';
 import 'package:flutter_provider/Screens/example_one.dart';
 import 'package:flutter_provider/Screens/favourite/favourite_screen.dart';
+import 'package:flutter_provider/Screens/value_notify_listener.dart';
 import 'package:provider/provider.dart';
 
 import 'Provider/count_provider.dart';
@@ -53,7 +54,7 @@ class MyApp extends StatelessWidget {
               debugShowCheckedModeBanner: false,
               theme: ThemeData(
                   brightness: Brightness.light,
-                  primarySwatch: Colors.blue,
+                  primarySwatch: Colors.red,
                   iconTheme: IconThemeData(color: Colors.green)),
               darkTheme: ThemeData(
                 brightness: Brightness.dark,
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
                   backgroundColor: Colors.teal
                 )
               ),
-              home: const DarkThemeScreen(),
+              home: NotifyListenerScreen(),
             );
           },
         ));
